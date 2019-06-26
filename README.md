@@ -1,6 +1,6 @@
 # Herow
 
-A flutter plugin for the [Herow SDK], a location based SDK related to the [Herow Platform](https://my.herow.io)
+A flutter plugin for the [Herow SDK](https://www.connecthings.com/developers/), a location based SDK related to the [Herow Platform](https://my.herow.io)
 
 ## Getting Started
 
@@ -14,9 +14,17 @@ Follow the [Android Quickstart](https://docs.connecthings.com/4.6/android/5-minu
 public class FlutterApp extends FlutterApplication
 ```
 
-## GDPR
+### iOS
 
-The plugin provides a set of methods to manage as best the user optins to be compliant to GDPR
+If you meet a compilation error about the Flutter.framework duplicated, click on Runner, select **Targets>Runner>Build Phases**.
+
+Next click on **Embed Frameworks** and remove the **Flutter framework**.
+
+## Being compliant with GDPR
+
+The following methods allow your application to be compliant to GDPR.
+
+You can find out more about this by reading our [GDPR tutorial](being-compliant-with-gdpr.html).
 
 ```dart
 try {
@@ -36,7 +44,6 @@ try {
 
 **Warning**: Untill the call to the **Herow.allOptinsAreUpdated();** method, the SDK won't transmit the data collected the platform.
 
-You can learn more about GPDR and optins reading the [native tutorial](https://docs.connecthings.com/4.6/android/being-compliant-with-gdpr.html)
 
 ## In App Actions
 
@@ -45,6 +52,8 @@ In App Actions are events triggered when the user enter or exit from a place (a 
 These events allow you to realize action depending of the informations associated to the place.
 
 For example, your application UI can be updated when your user is detected inside an airport or inside in a pub.
+
+You can find out more about this by reading our [In-App actions tutorial](in-app-action-process.html).
 
 Your application can be notified about In App Action events, registering to the In App Action Stream
 

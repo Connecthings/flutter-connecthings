@@ -11,9 +11,9 @@ enum OPTIN_TYPE {
 }
 /// The status of the inAppAction -
 enum IN_APP_ACTION_EVENT_STATUS {
-  ///The SDK detects the user arrives at a Place (a Geofence zone created on https://my.herow.io
+  /// The SDK detects the user arrives at a Place (a Geofence zone created on https://my.herow.io
   CREATE,
-  //The SDK detects the user leaves a place
+  /// The SDK detects the user leaves a place
   REMOVE
 }
 /// Data accessible when a in app action event is detected
