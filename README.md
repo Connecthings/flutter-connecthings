@@ -37,7 +37,9 @@ implementation "com.connecthings.herow:herow-detection:4.7-TM-beta_7"
 ```
 
 >**Warning:**
+> 
 > On Android, when you extend the default application you must use the **FlutterApplication** and not the default Application
+> 
 > ` public class FlutterApp extends FlutterApplication `
 
 ### iOS
@@ -63,13 +65,21 @@ Next click on **Embed Frameworks** and remove the **Flutter framework**.
 
 
 >**Note:**
+> 
 > On iOS, if you are using cocoapods 1.7.x or higher version, and you encounter an error when runinng `pod install` command, you will need to follow these steps:
+> 
 > 1- Clean your cocoapods cache
+> 
 > `rm -Rf ~/.cocoapods/repos/`
+> 
 > `rm -Rf Pods Podfile.lock`
+> 
 > 2- Add Herow Specs repository with the following commands
+> 
 > `pod repo add herow-pub-specs https://forge.herow.io/pub/Specs master`
+> 
 > 3- Redo your pod install command
+> 
 > `pod install`
 
 ## Being compliant with GDPR
@@ -94,6 +104,7 @@ optinUserDataStatus = await Herow.isOptinAuthorized(OPTIN_TYPE.USER_DATA);
 }
 ```
 >**Warning:**
+> 
 > Untill the call to the **Herow.allOptinsAreUpdated()** method, the SDK won't transmit any collected data to the platform.
 
 ## The In-App actions
