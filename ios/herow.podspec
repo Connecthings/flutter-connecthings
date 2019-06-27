@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'Herow'
+  s.name             = 'herow'
   s.version          = '0.0.3'
   s.summary          = 'A flutter plugin for the Herow platform - https://my.herow.io'
   s.description      = <<-DESC

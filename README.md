@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-Herow:0.0.3
+herow:0.0.3
 ```
 
 ## Initialize the SDK
@@ -30,7 +30,7 @@ at the native app level.
 
 Before following the previous tutorial. You need to open the application build.gradle and change two things :
 - The minSdkVersion need to be at least 19 because the SDK doesn't support lower version
-- You need to add the herow dependency to your application, to be able to initialize the SDK. 
+- You need to add the herow dependency to your application, to be able to initialize the SDK.
 
 ```
 implementation "com.connecthings.herow:herow-detection:4.7-TM-beta_7"
@@ -50,7 +50,7 @@ First thing to do is to update the Podfile sources, you can add at the beginning
 - source 'https://github.com/CocoaPods/Specs.git'
 - source 'https://forge.herow.io/pub/Specs'
 
-Then, you also need to set the minimum platform support to 9 : 
+Then, you also need to set the minimum platform support to 9 :
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
@@ -67,21 +67,21 @@ Next click on **Embed Frameworks** and remove the **Flutter framework**.
 
 
 >**Note:**
-> 
+>
 > On iOS, if you are using cocoapods 1.7.x or higher version, and you encounter an error when runinng `pod install` command, you will need to follow these steps:
-> 
+>
 > 1- Clean your cocoapods cache
-> 
+>
 > `rm -Rf ~/.cocoapods/repos/`
-> 
+>
 > `rm -Rf Pods Podfile.lock`
-> 
+>
 > 2- Add Herow Specs repository with the following commands
-> 
+>
 > `pod repo add herow-pub-specs https://forge.herow.io/pub/Specs master`
-> 
+>
 > 3- Redo your pod install command
-> 
+>
 > `pod install`
 
 ## Being compliant with GDPR
@@ -106,7 +106,7 @@ optinUserDataStatus = await Herow.isOptinAuthorized(OPTIN_TYPE.USER_DATA);
 }
 ```
 >**Warning:**
-> 
+>
 > Untill the call to the **Herow.allOptinsAreUpdated()** method, the SDK won't transmit any collected data to the platform.
 
 ## The In-App actions
