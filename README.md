@@ -37,10 +37,12 @@ implementation "com.connecthings.herow:herow-detection:4.7-TM-beta_7"
 ```
 
 >**Warning:**
-> 
+>
 > On Android, when you extend the default application you must use the **FlutterApplication** and not the default Application
-> 
-> ` public class FlutterApp extends FlutterApplication `
+>
+> ```java
+> public class FlutterApp extends FlutterApplication
+> ```
 
 ### iOS
 
