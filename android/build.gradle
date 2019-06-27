@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 
@@ -43,5 +43,5 @@ android {
 }
 
 dependencies {
-    implementation "com.connecthings.herow:herow-detection:4.6"
+    implementation "com.connecthings.herow:herow-detection:4.7-TM-beta_7"
 }

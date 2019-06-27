@@ -35,7 +35,7 @@ end
 
 target 'Runner' do
   use_frameworks!
-  pod 'HerowLocationDetection', '4.6.2-PR3'
+  pod 'HerowLocationDetection', '4.6.4'
   # Prepare symlinks folder. We use symlinks to avoid having Podfile.lock
   # referring to absolute paths on developers' machines.
   system('rm -rf .symlinks')
