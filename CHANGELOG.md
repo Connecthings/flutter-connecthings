@@ -1,3 +1,7 @@
+## 0.0.5
+
+* Update doc 
+
 ## 0.0.4
 
 * Minor fix for actions
