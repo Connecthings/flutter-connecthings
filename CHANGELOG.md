@@ -1,4 +1,4 @@
-## 0.04
+## 0.0.4
 
 * Minor fix for actions
 
