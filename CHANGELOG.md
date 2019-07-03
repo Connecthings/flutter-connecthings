@@ -1,3 +1,7 @@
+## 0.04
+
+* Minor fix for actions
+
 ## 0.0.3
 
 * Minor adjustments
