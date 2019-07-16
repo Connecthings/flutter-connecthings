@@ -7,9 +7,14 @@ import HerowLocationDetection
 
 public class SwiftHerowPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "connecthings.com/herow/optin", binaryMessenger: registrar.messenger())
         let instance = SwiftHerowPlugin()
+
+        let channel = FlutterMethodChannel(name: "connecthings.com/herow/optin", binaryMessenger: registrar.messenger())
         registrar.addMethodCallDelegate(instance, channel: channel)
+
+        let pushMethodChannel = FlutterMethodChannel(name: "connecthings.com/herow/push", binaryMessenger: registrar.messenger())
+        registrar.addMethodCallDelegate(instance, channel: pushMethodChannel)
+
         let channelEvent = FlutterEventChannel(name: "connecthings.com/herow/inAppActions", binaryMessenger: registrar.messenger())
         channelEvent.setStreamHandler(InAppActionStreamHandler())
     }
@@ -25,6 +30,15 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
         switch call.method {
         case "optinsNeverAsked":
             result(self.herowInitializer.optinsNeverAsked())
+            break
+        case "setCustomId":
+            if (proceedArguments(call: call, result: result, keys: [ "customId"])) {
+                let value: String = arg["customId"] as! String
+                self.herowInitializer.setCustomId(value);
+            }
+            break
+        case "removeCustomId":
+            self.herowInitializer.removeCustomId()
             break
         case "allOptinsAreUpdated":
             self.herowInitializer.allOptinsAreUpdated()

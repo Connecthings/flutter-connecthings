@@ -6,7 +6,6 @@ buildscript {
         google()
         jcenter()
     }
-
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
     }
@@ -32,7 +31,6 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
-
     defaultConfig {
         minSdkVersion 19
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -43,5 +41,5 @@ android {
 }
 
 dependencies {
-    implementation "com.connecthings.herow:herow-detection:4.7-TM-beta_9"
+    implementation "com.connecthings.herow:herow-detection:5.0-PR1"
 }

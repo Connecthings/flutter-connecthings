@@ -22,6 +22,9 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
+    Herow.setCustomId("test@connecthings.com");
+    Herow.removeCustomId();
+    
     bool optinUserDataStatus;
 
     // Platform messages may fail, so we use a try/catch PlatformException.
@@ -46,6 +49,7 @@ class _MyAppState extends State<MyApp> {
     }, onError: (error) {
       print("error is error");
     });
+
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
     // setState to update our non-existent appearance.
