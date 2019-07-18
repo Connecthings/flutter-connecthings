@@ -33,8 +33,11 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
             break
         case "setCustomId":
             if (proceedArguments(call: call, result: result, keys: [ "customId"])) {
-                let value: String = arg["customId"] as! String
-                self.herowInitializer.setCustomId(value);
+             if let arguments = call.arguments, let arg = arguments as? [String: Any] {
+                if let value: String = arg["customId"] as? String {
+                  self.herowInitializer.setCustomId(value)
+                  }
+             }
             }
             break
         case "removeCustomId":
