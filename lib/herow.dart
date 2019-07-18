@@ -52,6 +52,17 @@ class Herow {
     _channelPush.invokeMethod('setCustomId', { "customId" : customId });
   }
 
+  static registerForRemoteNotifications(bool automaticIntegration) {
+    _channelPush.invokeMethod('registerForRemoteNotifications', { "automaticIntegration" : automaticIntegration });
+  }
+
+
+  /// to get the current status of a given optin
+  static Future<String> getPushID() async {
+    final String pushID = await _channelPush.invokeMethod('getPushID');
+    return pushID;
+  }
+
   static removeCustomId() {
     _channelPush.invokeMethod("removeCustomId");
   }

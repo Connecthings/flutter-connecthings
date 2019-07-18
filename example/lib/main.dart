@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool _optinUserDataStatus = false;
-
+  String _pushID = "Nan";
   @override
   void initState() {
     super.initState();
@@ -24,9 +24,9 @@ class _MyAppState extends State<MyApp> {
   Future<void> initPlatformState() async {
     Herow.setCustomId("test@connecthings.com");
     Herow.removeCustomId();
-    
+    Herow.registerForRemoteNotifications(true);
     bool optinUserDataStatus;
-
+    String pushID;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       if (await Herow.optinsNeverAsked) {
@@ -35,6 +35,7 @@ class _MyAppState extends State<MyApp> {
         //Notify the sdk that there is no more optin to update
         Herow.allOptinsAreUpdated();
       }
+      pushID = await Herow.getPushID();
       optinUserDataStatus = await Herow.isOptinAuthorized(OPTIN_TYPE.USER_DATA);
     } on PlatformException {
 
@@ -57,6 +58,8 @@ class _MyAppState extends State<MyApp> {
 
     setState(() {
       _optinUserDataStatus = optinUserDataStatus;
+      _pushID = pushID;
+      print(_pushID);
     });
   }
 
@@ -68,9 +71,20 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('optin data status: $_optinUserDataStatus\n'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Text('optin data status: $_optinUserDataStatus\n'),
+              Text('push ID: $_pushID\n')
+            ])
+          )
+
+
+
+          //Text('optin data status: $_optinUserDataStatus\n'),
+
         ),
-      ),
-    );
+      );
+
   }
 }

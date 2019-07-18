@@ -40,9 +40,22 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
              }
             }
             break
+        case "getPushID":
+           result(self.herowInitializer.userManager.getPushID())
+            break
+        case "registerForRemoteNotifications":
+            if (proceedArguments(call: call, result: result, keys: [ "automaticIntegration"])) {
+                if let arguments = call.arguments, let arg = arguments as? [String: Any] {
+                    if let value: Bool = arg["automaticIntegration"] as? Bool {
+                        self.herowInitializer.registerForRemoteNotifications(automaticIntegration:value)
+                    }
+                }
+            }
+            break
         case "removeCustomId":
             self.herowInitializer.removeCustomId()
             break
+
         case "allOptinsAreUpdated":
             self.herowInitializer.allOptinsAreUpdated()
             break

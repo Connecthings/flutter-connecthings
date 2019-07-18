@@ -72,6 +72,12 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
             case "removeCustomId":
                 herowInitializer.removeCustomId();
                 break;
+            case "registerForRemoteNotifications":
+                herowInitializer.registerForPush( (boolean) call.argument("automaticIntegration"));
+                break;
+            case "getPushID":
+                herowInitializer.getPushId();
+                break;
             case "isOptinAuthorized":
                 if (proceedArguments(call, result, "type")) {
                     result.success(herowInitializer.isOptinAuthorized(OPTIN.valueOf((String) call.argument("type"))));
