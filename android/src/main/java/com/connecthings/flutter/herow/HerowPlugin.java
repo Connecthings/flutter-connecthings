@@ -76,7 +76,7 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
                 herowInitializer.registerForPush( (boolean) call.argument("automaticIntegration"));
                 break;
             case "getPushID":
-                herowInitializer.getPushId();
+                result.success(herowInitializer.getPushId());
                 break;
             case "isOptinAuthorized":
                 if (proceedArguments(call, result, "type")) {
