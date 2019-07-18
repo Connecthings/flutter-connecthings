@@ -1,6 +1,9 @@
 package com.connecthings.flutter.herow_example;
 
 import android.os.Bundle;
+
+import com.connecthings.herow.HerowInitializer;
+
 import io.flutter.app.FlutterActivity;
 import io.flutter.plugins.GeneratedPluginRegistrant;
 
@@ -9,5 +12,6 @@ public class MainActivity extends FlutterActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     GeneratedPluginRegistrant.registerWith(this);
+    HerowInitializer.getInstance().askPermissions(this, 123);
   }
 }
