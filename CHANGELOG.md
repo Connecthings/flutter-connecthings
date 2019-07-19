@@ -1,3 +1,7 @@
+## 0.0.6
+* add push and customID features
+* Update doc
+
 ## 0.0.5
 
 * Update doc 

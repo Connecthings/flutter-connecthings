@@ -52,6 +52,15 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
                 }
             }
             break
+        case "setAppGroupName":
+            if (proceedArguments(call: call, result: result, keys: [ "groupName"])) {
+                if let arguments = call.arguments, let arg = arguments as? [String: Any] {
+                    if let value: String = arg["groupName"] as? String {
+                        self.herowInitializer.setAppGroupName(groupName:value)
+                    }
+                }
+            }
+            break
         case "removeCustomId":
             self.herowInitializer.removeCustomId()
             break

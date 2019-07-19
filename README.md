@@ -33,7 +33,7 @@ Before following the previous tutorial. You need to open the application build.g
 - You need to add the herow dependency to your application, to be able to initialize the SDK.
 
 ```
-implementation "com.connecthings.herow:herow-detection:4.7-TM-beta_9"
+implementation "com.connecthings.herow:herow-detection:5.0-TM-beta-PR5"
 ```
 
 >**Warning:**
@@ -84,6 +84,16 @@ Next click on **Embed Frameworks** and remove the **Flutter framework**.
 >
 > `pod install`
 
+## Enable PUSH
+You have dart Method to registerForPush:
+```dart
+ // ios and android push registration
+ Herow.registerForRemoteNotifications(true);
+
+ // ios appGroupName settings
+ Herow.setAppGroupName("my_APP_Group_Name");
+ You can find out more about this by reading our [PUSH tutorial](push-notification.html).
+```
 ## Being compliant with GDPR
 
 The following methods allow your application to be compliant to GDPR.

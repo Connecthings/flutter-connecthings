@@ -56,6 +56,9 @@ class Herow {
     _channelPush.invokeMethod('registerForRemoteNotifications', { "automaticIntegration" : automaticIntegration });
   }
 
+  static  setAppGroupName(String groupName) {
+    _channelPush.invokeMethod('setAppGroupName', { "groupName" : groupName });
+  }
 
   /// to get the current status of a given optin
   static Future<String> getPushID() async {

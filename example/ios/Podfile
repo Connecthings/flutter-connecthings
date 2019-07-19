@@ -32,10 +32,13 @@ def parse_KV_file(file, separator='=')
   }
   return pods_ary
 end
-
+target 'FlutterNotificationServiceExtension' do
+  use_frameworks!
+  pod 'HerowNotificationServiceExtension', '1.0.1'
+end
 target 'Runner' do
   use_frameworks!
-  pod 'HerowLocationDetection', '5.0-PR1'
+ 
   # Prepare symlinks folder. We use symlinks to avoid having Podfile.lock
   # referring to absolute paths on developers' machines.
   system('rm -rf .symlinks')
@@ -61,6 +64,7 @@ target 'Runner' do
     File.symlink(p[:path], symlink)
     pod p[:name], :path => File.join(symlink, 'ios')
   }
+   pod 'HerowLocationDetection', '5.0'
 end
 
 post_install do |installer|

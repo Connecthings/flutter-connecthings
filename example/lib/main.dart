@@ -25,6 +25,7 @@ class _MyAppState extends State<MyApp> {
     Herow.setCustomId("test@connecthings.com");
     Herow.removeCustomId();
     Herow.registerForRemoteNotifications(true);
+    Herow.setAppGroupName("com.connecthings.herow");
     bool optinUserDataStatus;
     String pushID;
     // Platform messages may fail, so we use a try/catch PlatformException.
