@@ -18,12 +18,12 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.5
+herow:0.0.6
 ```
 
 ## Initialize the SDK
 
-Follow the [iOS](https://docs.connecthings.com/4.6/ios/5-minutes-quickstart.html) and [Android](https://docs.connecthings.com/4.6/android/5-minutes-quickstart.html) 5-minutes quickstart to initialize the SDK
+Follow the [iOS](https://docs.connecthings.com/sdk/5.0/ios/5-minutes-quickstart.html) and [Android](https://docs.connecthings.com/sdk/5.0/android/5-minutes-quickstart.html) 5-minutes quickstart to initialize the SDK
 at the native app level.
 
 ### Android
