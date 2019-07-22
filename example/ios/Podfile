@@ -34,7 +34,7 @@ def parse_KV_file(file, separator='=')
 end
 target 'FlutterNotificationServiceExtension' do
   use_frameworks!
-  pod 'HerowNotificationServiceExtension', '1.0.4'
+  pod 'HerowNotificationServiceExtension', '1.0.5'
 end
 target 'Runner' do
   use_frameworks!
