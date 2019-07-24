@@ -1,3 +1,6 @@
+## 0.0.7
+* minor fixes for iOS version
+
 ## 0.0.6
 * add push and customID features
 * Update doc
