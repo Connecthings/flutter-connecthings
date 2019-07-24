@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'herow'
-  s.version          = '0.0.7'
+  s.version          = '0.0.8'
   s.summary          = 'A flutter plugin for the Herow platform - https://my.herow.io'
   s.description      = <<-DESC
 A new flutter plugin project.
