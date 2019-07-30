@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.8
+herow:0.0.9
 ```
 
 ## Initialize the SDK
@@ -146,4 +146,12 @@ print("done is done");
 }, onError: (error) {
 print("error is error");
 });
+```
+
+## Setting custom user ID
+
+The following method allow you to set a custom user ID.
+
+```dart
+Herow.setCustomId("customUserIdentifier");
 ```

@@ -1,3 +1,6 @@
+## 0.0.9
+* Fix iOS push when testing with APNS sandbox mode.
+
 ## 0.0.8
 * Update doc
 
