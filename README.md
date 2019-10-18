@@ -1,6 +1,6 @@
 # Herow
 
-A flutter plugin for the [Herow SDK](https://www.connecthings.com/developers/), a location based SDK related to the [Herow Platform](https://my.herow.io)
+A flutter plugin for the [Herow SDK](https://herow.io/developers/), a location based SDK related to the [Herow Platform](https://my.herow.io)
 
 ## Getting Started
 
@@ -18,12 +18,12 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.9
+herow:0.0.10
 ```
 
 ## Initialize the SDK
 
-Follow the [iOS](https://docs.connecthings.com/sdk/5.0/ios/5-minutes-quickstart.html) and [Android](https://docs.connecthings.com/sdk/5.0/android/5-minutes-quickstart.html) 5-minutes quickstart to initialize the SDK
+Follow the [iOS](https://docs.herow.io/sdk/5.1/ios/5-minutes-quickstart.html) and [Android](https://docs.herow.io/sdk/5.1/android/5-minutes-quickstart.html) 5-minutes quickstart to initialize the SDK
 at the native app level.
 
 ### Android
@@ -93,13 +93,13 @@ You have dart Method to registerForPush:
  // ios appGroupName settings
  Herow.setAppGroupName("my_APP_Group_Name");
  ```
- You can find out more about this by reading our PUSH tutorial for [iOS](https://docs.connecthings.com/sdk/5.0/ios/push-notification.html) and [Android](https://docs.connecthings.com/sdk/5.0/android/push-notification.html).
+ You can find out more about this by reading our PUSH tutorial for [iOS](https://docs.herow.io/sdk/5.1/ios/push-notification.html) and [Android](https://docs.herow.io/sdk/5.1/android/push-notification.html).
 
 ## Being compliant with GDPR
 
 The following methods allow your application to be compliant to GDPR.
 
-You can find out more about this by reading our GDPR tutorial for [iOS](https://docs.connecthings.com/sdk/5.0/ios/being-compliant-with-gdpr.html) and [Android](https://docs.connecthings.com/sdk/5.0/android/being-compliant-with-gdpr.html).
+You can find out more about this by reading our GDPR tutorial for [iOS](https://docs.herow.io/sdk/5.1/ios/being-compliant-with-gdpr.html) and [Android](https://docs.herow.io/sdk/5.1/android/being-compliant-with-gdpr.html).
 
 ```dart
 try {
@@ -128,7 +128,7 @@ These events allow you to realize action depending on the information associated
 
 For example, your application UI can be updated when your user is detected inside an airport or inside in a pub.
 
-You can find out more about this by reading our In-App actions tutorial for [iOS](https://docs.connecthings.com/sdk/5.0/ios/in-app-action-process.html) and [Android](https://docs.connecthings.com/sdk/5.0/android/in-app-action-process.html).
+You can find out more about this by reading our In-App actions tutorial for [iOS](https://docs.herow.io/sdk/5.1/ios/in-app-action-process.html) and [Android](https://docs.herow.io/sdk/5.1/android/in-app-action-process.html).
 
 Your application can be notified about In App Action events, registering to the In App Action Stream.
 

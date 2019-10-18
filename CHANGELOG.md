@@ -1,13 +1,21 @@
+## 0.0.10
+
+* Update beta version
+
 ## 0.0.9
+
 * Fix iOS push when testing with APNS sandbox mode.
 
 ## 0.0.8
+
 * Update doc
 
 ## 0.0.7
+
 * minor fixes for iOS version
 
 ## 0.0.6
+
 * add push and customID features
 * Update doc
 

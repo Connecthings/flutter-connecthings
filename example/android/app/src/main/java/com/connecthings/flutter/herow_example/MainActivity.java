@@ -12,6 +12,6 @@ public class MainActivity extends FlutterActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     GeneratedPluginRegistrant.registerWith(this);
-    HerowInitializer.getInstance().askPermissions(this, 123);
+    HerowInitializer.getInstance().askPermissions();
   }
 }

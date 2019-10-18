@@ -352,12 +352,10 @@
 				"${PODS_ROOT}/ConnectPlaceDetection/ConnectPlaceDetection.framework",
 				"${PODS_ROOT}/ConnectPlaceGeoDetection/ConnectPlaceGeoDetection.framework",
 				"${PODS_ROOT}/ConnectPlaceProvider/ConnectPlaceProvider.framework",
-				"${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework",
 				"${PODS_ROOT}/HerowAnalytics/HerowAnalytics.framework",
 				"${PODS_ROOT}/HerowConnection/HerowConnection.framework",
 				"${PODS_ROOT}/HerowLocationDetection/HerowLocationDetection.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/herow/herow.framework",
 				"${PODS_ROOT}/HerowNotificationServiceExtension/HerowNotificationServiceExtension.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -369,12 +367,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ConnectPlaceDetection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ConnectPlaceGeoDetection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ConnectPlaceProvider.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HerowAnalytics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HerowConnection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HerowLocationDetection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/herow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HerowNotificationServiceExtension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
