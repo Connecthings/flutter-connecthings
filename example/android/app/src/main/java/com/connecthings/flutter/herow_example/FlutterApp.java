@@ -9,6 +9,7 @@ import com.connecthings.util.connection.Url;
 import io.flutter.app.FlutterApplication;
 
 public class FlutterApp extends FlutterApplication {
+
     public void onCreate() {
         super.onCreate();
 

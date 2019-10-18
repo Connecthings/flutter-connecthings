@@ -83,6 +83,9 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
                     result.success(herowInitializer.isOptinAuthorized(OPTIN.valueOf((String) call.argument("type"))));
                 }
                 break;
+            case "setAppGroupName":
+                result.success("herow-android-group-name");
+                break;
             default:
                 result.notImplemented();
                 break;
