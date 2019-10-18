@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.connecthings.flutter.herow_example">
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
@@ -9,7 +10,9 @@
     <application
         android:name=".FlutterApp"
         android:label="herow_example"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        tools:ignore="GoogleAppIndexingWarning">
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -29,5 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
     </application>
 </manifest>
