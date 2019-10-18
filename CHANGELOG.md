@@ -1,3 +1,7 @@
+## 0.0.11
+
+* Fix setAppGroupName implementation.
+
 ## 0.0.10
 
 * Update beta version

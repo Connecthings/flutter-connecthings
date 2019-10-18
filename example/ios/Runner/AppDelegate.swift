@@ -6,12 +6,13 @@ import ConnectPlaceCommon
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate, HerowReceiveNotificationContentDelegate {
+    
   override func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
   ) -> Bool {
     let herowInitializer = HerowInitializer.shared
-    herowInitializer.configPlatform(Platform.preProdAdtag).configApp(identifier: "plopi", sdkKey: "fSKbCEvCDCbYTDlk").synchronize()
+    herowInitializer.configPlatform(Platform.prod).configApp(identifier: "YOUR_SDK_ID", sdkKey: "YOUR_SDK_KEY").synchronize()
     GlobalLogger.shared.startDebug()
     HerowDetectionManager.shared.registerReceiveNotificatonContentDelegate(self)
     GlobalLogger.shared.debug("herowDetectionManager appDelegate \(HerowDetectionManager.shared)")

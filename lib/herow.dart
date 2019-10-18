@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
+import 'dart:io' show Platform;
 
 /// The optins type managed through the SDK
 enum OPTIN_TYPE {
@@ -57,7 +58,9 @@ class Herow {
   }
 
   static  setAppGroupName(String groupName) {
-    _channelPush.invokeMethod('setAppGroupName', { "groupName" : groupName });
+	  if (Platform.isIOS) {
+		_channelPush.invokeMethod('setAppGroupName', { "groupName" : groupName });		
+	  }
   }
 
   /// to get the current status of a given optin
