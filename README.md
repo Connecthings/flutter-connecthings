@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.11
+herow:0.0.12
 ```
 
 ## Initialize the SDK
@@ -33,7 +33,7 @@ Before following the previous tutorial. You need to open the application build.g
 - You need to add the herow dependency to your application, to be able to initialize the SDK.
 
 ```
-implementation "com.connecthings.herow:herow-detection:5.0-TM-beta-PR5"
+implementation "com.connecthings.herow:herow-detection:6.0-BETA-PR2"
 ```
 
 >**Warning:**

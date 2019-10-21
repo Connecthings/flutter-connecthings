@@ -15,7 +15,6 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
-        mavenLocal()
         maven {
             url "https://forge.herow.io/nexus/content/groups/public"
         }
@@ -42,5 +41,5 @@ android {
 }
 
 dependencies {
-    implementation "com.connecthings.herow:herow-detection:6.0-BETA-PR1"
+    implementation "com.connecthings.herow:herow-detection:6.0-BETA-PR2"
 }

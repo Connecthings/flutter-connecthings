@@ -130,7 +130,7 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
         @Override
         public boolean createInAppAction(HerowPlaceInAppAction herowPlaceInAppAction, InAppActionStatusManagerListener inAppActionStatusManagerListener) {
             Logger.d(TAG, "create in app action");
-            Map<String, String> content = new HashMap();
+            Map<String, String> content = new HashMap<>();
             content.put("status", "CREATE");
             content.put("id", herowPlaceInAppAction.getPlaceId());
             content.put("title", herowPlaceInAppAction.getTitle());
