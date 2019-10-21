@@ -63,6 +63,7 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
                 break;
             case "allOptinsAreUpdated":
                 herowInitializer.allOptinsAreUpdated();
+                herowInitializer.synchronize();
                 break;
             case "setCustomId":
                 if (proceedArguments(call, result, "customId")) {
@@ -94,12 +95,12 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
 
     private boolean proceedArguments(MethodCall call, Result result, String... keys) {
         if (call.arguments == null) {
-            result.error("ARGUMENT_ERRROR", "Arguements is empty", null);
+            result.error("ARGUMENT_ERROR", "Arguments is empty", null);
             return false;
         }
         for (String key : keys) {
             if (!call.hasArgument(key)) {
-                result.error("ARGUMENT_ERRROR", "Key " + key + " is empty", null);
+                result.error("ARGUMENT_ERROR", "Key " + key + " is empty", null);
                 return false;
             }
         }
@@ -120,7 +121,6 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
     }
 
     class ListenInAppAction implements InAppActionListener<HerowPlaceInAppAction> {
-
         private final EventChannel.EventSink eventSink;
 
         public ListenInAppAction(EventChannel.EventSink eventSink) {
