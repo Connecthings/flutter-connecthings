@@ -16,7 +16,7 @@ public class FlutterApp extends FlutterApplication {
         final HerowInitializer herowInitializer = HerowInitializer.getInstance();
 
         herowInitializer.initContext(this)
-                .initUrlType(Url.UrlType.PRE_PROD)
+                .initUrlType(Url.UrlType.PROD)
                 .initApp("SDK_ID", "SDK_KEY")
                 .synchronize();
 
