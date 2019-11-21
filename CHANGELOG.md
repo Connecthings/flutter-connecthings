@@ -1,3 +1,7 @@
+## 0.0.13
+
+* Update beta version for Android & iOS
+
 ## 0.0.12
 
 * Update beta version

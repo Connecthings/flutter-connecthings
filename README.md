@@ -33,7 +33,7 @@ Before following the previous tutorial. You need to open the application build.g
 - You need to add the herow dependency to your application, to be able to initialize the SDK.
 
 ```
-implementation "com.connecthings.herow:herow-detection:6.0-BETA-PR2"
+implementation "com.connecthings.herow:herow-detection:6.0-BETA-PR7"
 ```
 
 >**Warning:**
