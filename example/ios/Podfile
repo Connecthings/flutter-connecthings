@@ -34,7 +34,7 @@ def parse_KV_file(file, separator='=')
 end
 target 'FlutterNotificationServiceExtension' do
   use_frameworks!
-  pod 'HerowNotificationServiceExtension', '1.1.0'
+  pod 'HerowNotificationServiceExtension', '1.1.1'
 end
 target 'Runner' do
   use_frameworks!
@@ -64,7 +64,7 @@ target 'Runner' do
     File.symlink(p[:path], symlink)
     pod p[:name], :path => File.join(symlink, 'ios')
   }
-  pod 'HerowLocationDetection', '5.1.1'
+  pod 'HerowLocationDetectionBeta', '6.0.0'
 end
 
 post_install do |installer|

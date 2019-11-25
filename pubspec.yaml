@@ -1,7 +1,7 @@
 name: herow
-description: A flutter plugin for the Herow platform - https://my.herow.io
-version: 0.0.13
-author: HEROW <contact@connecthings.com>
+description: A flutter plugin for the HEROW platform - https://my.herow.io
+version: 0.0.14
+author: HEROW <contact@herow.io>
 homepage: https://herow.io/
 
 environment:
