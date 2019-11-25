@@ -1,6 +1,6 @@
-# Herow
+# HEROW
 
-A flutter plugin for the [Herow SDK](https://herow.io/developers/), a location based SDK related to the [Herow Platform](https://my.herow.io)
+A flutter plugin for the [HEROW SDK](https://herow.io/developers/), a location based SDK related to the [HEROW Platform](https://my.herow.io)
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ at the native app level.
 
 Before following the previous tutorial. You need to open the application build.gradle and change two things :
 - The minSdkVersion need to be at least 19 because the SDK doesn't support lower version
-- You need to add the herow dependency to your application, to be able to initialize the SDK.
+- You need to add the HEROW dependency to your application, to be able to initialize the SDK.
 
 ```
 implementation "com.connecthings.herow:herow-detection:6.0-BETA-PR8"
@@ -76,7 +76,7 @@ Next click on **Embed Frameworks** and remove the **Flutter framework**.
 >
 > `rm -Rf Pods Podfile.lock`
 >
-> 2- Add Herow Specs repository with the following commands
+> 2- Add HEROW Specs repository with the following commands
 >
 > `pod repo add herow-pub-specs https://forge.herow.io/pub/Specs master`
 >
@@ -122,7 +122,7 @@ optinUserDataStatus = await Herow.isOptinAuthorized(OPTIN_TYPE.USER_DATA);
 
 ## The In-App actions
 
-In App Actions are events triggered when the user enter or exit from a place (a geofence zone or beacon configured on the [Herow Platform](https://my.herow.io))
+In App Actions are events triggered when the user enter or exit from a place (a geofence zone or beacon configured on the [HEROW Platform](https://my.herow.io))
 
 These events allow you to realize action depending on the information associated with the place.
 
