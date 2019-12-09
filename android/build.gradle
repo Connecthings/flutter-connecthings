@@ -41,5 +41,5 @@ android {
 }
 
 dependencies {
-    implementation "com.connecthings.herow:herow-detection:6.0-BETA-PR10"
+    implementation "com.connecthings.herow:herow-detection:6.1-PR2"
 }

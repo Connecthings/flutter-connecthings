@@ -64,7 +64,7 @@ target 'Runner' do
     File.symlink(p[:path], symlink)
     pod p[:name], :path => File.join(symlink, 'ios')
   }
-  pod 'HerowLocationDetectionBeta', '6.0.3'
+  pod 'HerowLocationDetectionBeta', '6.1.2'
 end
 
 post_install do |installer|
