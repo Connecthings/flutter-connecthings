@@ -13,7 +13,7 @@ import ConnectPlaceCommon
   ) -> Bool {
     let herowInitializer = HerowInitializer.shared
     herowInitializer.configPlatform(Platform.prod).configApp(identifier: "YOUR_SDK_ID", sdkKey: "YOUR_SDK_KEY").synchronize()
-    GlobalLogger.shared.startDebug()
+//    GlobalLogger.shared.startDebug()
     HerowDetectionManager.shared.registerReceiveNotificatonContentDelegate(self)
     GlobalLogger.shared.debug("herowDetectionManager appDelegate \(HerowDetectionManager.shared)")
     if #available(iOS 10.0, *) {
@@ -36,9 +36,5 @@ import ConnectPlaceCommon
 
     func didReceivePlaceNotification(_ placeNotification: HerowPlaceNotification) {
         NSLog("open a controller with a place notification")
-    }
-
-    func didReceiveWelcomeNotification(_ welcomeNotification: HerowPlaceWelcomeNotification) {
-        NSLog("open a controller with a place welcome notification")
     }
 }

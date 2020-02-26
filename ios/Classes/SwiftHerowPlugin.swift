@@ -41,7 +41,7 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
             }
             break
         case "getPushID":
-           result(self.herowInitializer.userManager.getPushID())
+           result(self.herowInitializer.userInfoManager.getPushID())
             break
         case "registerForRemoteNotifications":
             if (proceedArguments(call: call, result: result, keys: [ "automaticIntegration"])) {
