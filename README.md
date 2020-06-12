@@ -18,12 +18,12 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.18
+herow:0.0.19
 ```
 
 ## Initialize the SDK
 
-Follow the [iOS](https://docs.herow.io/sdk/6.1/ios/5-minutes-quickstart.html) and [Android](https://docs.herow.io/sdk/6.1/android/5-minutes-quickstart.html) 5-minutes quickstart to initialize the SDK
+Follow the [iOS](https://docs.herow.io/sdk/6.2/ios/5-minutes-quickstart.html) and [Android](https://docs.herow.io/sdk/6.2/android/5-minutes-quickstart.html) 5-minutes quickstart to initialize the SDK
 at the native app level.
 
 ### Android
@@ -33,7 +33,7 @@ Before following the previous tutorial. You need to open the application build.g
 - You need to add the HEROW dependency to your application, to be able to initialize the SDK.
 
 ```
-implementation "com.connecthings.herow:herow-detection:6.1.0"
+implementation "com.connecthings.herow:herow-detection:6.2.0"
 ```
 
 >**Warning:**
@@ -61,7 +61,7 @@ platform :ios, '9.0'
 
 <!-- HEROW SDK flutter plugin uses a beta version of the SDK, please ensure that in your final Podfile you will use HerowLocationDetectionBeta framework
 ```
-pod "HerowLocationDetectionBeta", '~> 6.1.0'
+pod "HerowLocationDetectionBeta", '~> 6.2.0'
 ``` -->
 
 You're ready to follow the iOS tutorial.
@@ -98,13 +98,13 @@ You have dart Method to registerForPush:
  // ios appGroupName settings
  Herow.setAppGroupName("my_APP_Group_Name");
  ```
- You can find out more about this by reading our PUSH tutorial for [iOS](https://docs.herow.io/sdk/6.1/ios/push-notification.html) and [Android](https://docs.herow.io/sdk/6.1/android/push-notification.html).
+ You can find out more about this by reading our PUSH tutorial for [iOS](https://docs.herow.io/sdk/6.2/ios/push-notification.html) and [Android](https://docs.herow.io/sdk/6.2/android/push-notification.html).
 
 ## Being compliant with GDPR
 
 The following methods allow your application to be compliant to GDPR.
 
-You can find out more about this by reading our GDPR tutorial for [iOS](https://docs.herow.io/sdk/6.1/ios/being-compliant-with-gdpr.html) and [Android](https://docs.herow.io/sdk/6.1/android/being-compliant-with-gdpr.html).
+You can find out more about this by reading our GDPR tutorial for [iOS](https://docs.herow.io/sdk/6.2/ios/being-compliant-with-gdpr.html) and [Android](https://docs.herow.io/sdk/6.2/android/being-compliant-with-gdpr.html).
 
 ```dart
 try {
@@ -133,7 +133,7 @@ These events allow you to realize action depending on the information associated
 
 For example, your application UI can be updated when your user is detected inside an airport or inside in a pub.
 
-You can find out more about this by reading our In-App actions tutorial for [iOS](https://docs.herow.io/sdk/6.1/ios/in-app-action-process.html) and [Android](https://docs.herow.io/sdk/6.1/android/in-app-action-process.html).
+You can find out more about this by reading our In-App actions tutorial for [iOS](https://docs.herow.io/sdk/6.2/ios/in-app-action-process.html) and [Android](https://docs.herow.io/sdk/6.2/android/in-app-action-process.html).
 
 Your application can be notified about In App Action events, registering to the In App Action Stream.
 
