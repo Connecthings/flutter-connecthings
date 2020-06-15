@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.19
+herow:0.0.20
 ```
 
 ## Initialize the SDK

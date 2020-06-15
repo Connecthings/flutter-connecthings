@@ -1,3 +1,7 @@
+## 0.0.20
+
+* Minor fixes on sample project.
+
 ## 0.0.19
 
 * Update version for Android & iOS
