@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.20
+herow:0.0.21
 ```
 
 ## Initialize the SDK
@@ -127,7 +127,7 @@ optinUserDataStatus = await Herow.isOptinAuthorized(OPTIN_TYPE.USER_DATA);
 
 ## The In-App actions
 
-In App Actions are events triggered when the user enter or exit from a place (a geofence zone or beacon configured on the [HEROW Platform](https://my.herow.io))
+In App Actions are events triggered when the user enter or exit from a place (a geofence configured on the [HEROW Platform](https://my.herow.io))
 
 These events allow you to realize action depending on the information associated with the place.
 

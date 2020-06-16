@@ -1,3 +1,7 @@
+## 0.0.21
+
+* Update documentation.
+
 ## 0.0.20
 
 * Minor fixes on sample project.
