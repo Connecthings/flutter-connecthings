@@ -67,6 +67,7 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
 
         case "allOptinsAreUpdated":
             self.herowInitializer.allOptinsAreUpdated()
+            self.herowInitializer.synchronize()
             break
         case "updateOptin":
             if (proceedArguments(call: call, result: result, keys: ["type", "validate"])) {

@@ -1,3 +1,7 @@
+## 0.0.22
+
+* Syncrhonize immediatly after optins are given.
+
 ## 0.0.21
 
 * Update documentation.
