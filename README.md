@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/Connecthings/fl
 * add to the dependencies section
 
 ```yaml
-herow:0.0.22
+herow:0.0.23
 ```
 
 ## Initialize the SDK
@@ -33,7 +33,7 @@ Before following the previous tutorial. You need to open the application build.g
 - You need to add the HEROW dependency to your application, to be able to initialize the SDK.
 
 ```
-implementation "com.connecthings.herow:herow-detection:6.2.0"
+implementation "com.connecthings.herow:herow-detection:6.2.2"
 ```
 
 >**Warning:**
@@ -59,10 +59,6 @@ source 'https://forge.herow.io/pub/Specs'
 platform :ios, '9.0'
 ```
 
-<!-- HEROW SDK flutter plugin uses a beta version of the SDK, please ensure that in your final Podfile you will use HerowLocationDetectionBeta framework
-```
-pod "HerowLocationDetectionBeta", '~> 6.2.0'
-``` -->
 
 You're ready to follow the iOS tutorial.
 

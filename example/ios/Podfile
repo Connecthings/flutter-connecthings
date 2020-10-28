@@ -35,7 +35,7 @@ end
 
 target 'FlutterNotificationServiceExtension' do
   use_frameworks!
-  pod 'HerowNotificationServiceExtension', '1.1.3'
+  pod 'HerowNotificationServiceExtension', '1.1.4'
 end
 
 target 'Runner' do

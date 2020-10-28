@@ -1,3 +1,7 @@
+## 0.0.23
+
+* Update versions for iOS and Android.
+
 ## 0.0.22
 
 * Syncrhonize immediatly after optins are given.
