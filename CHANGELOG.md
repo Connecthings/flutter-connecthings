@@ -1,3 +1,7 @@
+## 0.0.24
+
+* Adjust sample project for iOS.
+
 ## 0.0.23
 
 * Update versions for iOS and Android.
