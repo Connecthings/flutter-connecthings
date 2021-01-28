@@ -109,48 +109,49 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
 
     @Override
     public void onListen(Object arguments, EventChannel.EventSink eventSink) {
-        Logger.d(TAG, "START listening in app action");
+        // START listening in app action
         HerowDetectionManager.getInstance().registerInAppActionListener(new ListenInAppAction(eventSink));
         Map<String, String> content = new HashMap<>();
     }
 
     @Override
     public void onCancel(Object arguments) {
-        Logger.d(TAG, "STOP listening in app action");
+        // STOP listening in app action
         HerowDetectionManager.getInstance().unregisterInAppActionListener();
     }
+}
 
-    class ListenInAppAction implements InAppActionListener<HerowPlaceInAppAction> {
-        private final EventChannel.EventSink eventSink;
 
-        public ListenInAppAction(EventChannel.EventSink eventSink) {
-            this.eventSink = eventSink;
-        }
+class ListenInAppAction implements InAppActionListener<HerowPlaceInAppAction> {
+    private final EventChannel.EventSink eventSink;
 
-        @Override
-        public boolean createInAppAction(HerowPlaceInAppAction herowPlaceInAppAction, InAppActionStatusManagerListener inAppActionStatusManagerListener) {
-            Logger.d(TAG, "create in app action");
-            Map<String, String> content = new HashMap<>();
-            content.put("status", "CREATE");
-            content.put("id", herowPlaceInAppAction.getPlaceId());
-            content.put("title", herowPlaceInAppAction.getTitle());
-            content.put("description", herowPlaceInAppAction.getDescription());
-            content.put("tag", herowPlaceInAppAction.getTag());
-            eventSink.success(content);
-            return true;
-        }
+    public ListenInAppAction(EventChannel.EventSink eventSink) {
+        this.eventSink = eventSink;
+    }
 
-        @Override
-        public boolean removeInAppAction(HerowPlaceInAppAction herowPlaceInAppAction, InAppActionRemoveStatus inAppActionRemoveStatus) {
-            Logger.d(TAG, "remove in app action");
-            Map<String, String> content = new HashMap();
-            content.put("status", "REMOVE");
-            content.put("id", herowPlaceInAppAction.getPlaceId());
-            content.put("title", herowPlaceInAppAction.getTitle());
-            content.put("description", herowPlaceInAppAction.getDescription());
-            content.put("tag", herowPlaceInAppAction.getTag());
-            eventSink.success(content);
-            return true;
-        }
+    @Override
+    public boolean createInAppAction(HerowPlaceInAppAction herowPlaceInAppAction, InAppActionStatusManagerListener inAppActionStatusManagerListener) {
+        // create in app action
+        Map<String, String> content = new HashMap<>();
+        content.put("status", "CREATE");
+        content.put("id", herowPlaceInAppAction.getPlaceId());
+        content.put("title", herowPlaceInAppAction.getTitle());
+        content.put("description", herowPlaceInAppAction.getDescription());
+        content.put("tag", herowPlaceInAppAction.getTag());
+        eventSink.success(content);
+        return true;
+    }
+
+    @Override
+    public boolean removeInAppAction(HerowPlaceInAppAction herowPlaceInAppAction, InAppActionRemoveStatus inAppActionRemoveStatus) {
+        // remove in app action
+        Map<String, String> content = new HashMap();
+        content.put("status", "REMOVE");
+        content.put("id", herowPlaceInAppAction.getPlaceId());
+        content.put("title", herowPlaceInAppAction.getTitle());
+        content.put("description", herowPlaceInAppAction.getDescription());
+        content.put("tag", herowPlaceInAppAction.getTag());
+        eventSink.success(content);
+        return true;
     }
 }

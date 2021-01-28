@@ -1,6 +1,7 @@
 package com.connecthings.flutter.herow_example;
 
 import android.Manifest;
+import android.app.Application;
 import android.os.Build;
 
 import com.connecthings.herow.HerowInitializer;
@@ -8,7 +9,7 @@ import com.connecthings.util.connection.Url;
 
 import io.flutter.app.FlutterApplication;
 
-public class FlutterApp extends FlutterApplication {
+public class FlutterApp extends Application {
 
     public void onCreate() {
         super.onCreate();

@@ -47,7 +47,7 @@ class Herow {
   const EventChannel('connecthings.com/herow/inAppActions');
 
 
-  /***************************************** PUSH *******************************************************/
+///  ### PUSH ###
 
   static setCustomId(String customId) {
     _channelPush.invokeMethod('setCustomId', { "customId" : customId });
@@ -73,7 +73,7 @@ class Herow {
     _channelPush.invokeMethod("removeCustomId");
   }
 
-  /***************************************** OPTIN *******************************************************/
+///  ### OPTIN ###
 
   ///return true if the application has never asked the optins to the user
   static Future<bool> get optinsNeverAsked async {
@@ -100,7 +100,7 @@ class Herow {
   }
 
 
-  /***************************************** In App Action *******************************************************/
+/// ### In App Action ###
 
   InAppActionEvent _convertToInAppctionEvent(Map<String, dynamic> event) {
     return InAppActionEvent(

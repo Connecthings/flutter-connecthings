@@ -8,9 +8,9 @@ The Connecthings Flutter plugin allows you to access to the GDPR methods and In-
 
 Nevertheless, the configuration of the SDK must still be done at the android and iOS app level.
 
-A [Flutter application](https://github.com/Connecthings/flutter-connecthings) is available on github to show you a concrete implementation.
+A [Flutter application](https://github.com/herowio/flutter-connecthings) is available on github to show you a concrete implementation.
 
-You just have to clone the plugin repository [https://github.com/Connecthings/flutter-connecthings](https://github.com/Connecthings/flutter-connecthings), and open it with an android studio configured for flutter.
+You just have to clone the plugin repository [https://github.com/Connecthings/flutter-connecthings](https://github.com/herowio/flutter-connecthings), and open it with an android studio configured for flutter.
 
 ## Add the plugin to your project
 

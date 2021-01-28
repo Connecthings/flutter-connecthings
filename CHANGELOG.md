@@ -1,3 +1,8 @@
+## 0.0.25
+
+* Update SDK versions.
+* Fix plugin specs 
+
 ## 0.0.24
 
 * Adjust sample project for iOS.
