@@ -1,3 +1,6 @@
+## 0.0.29
+
+* fixes documentation
 
 ## 0.0.28
 

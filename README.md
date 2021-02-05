@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/herowio/flutter
 * add to the dependencies section
 
 ```yaml
-herow:0.0.27
+herow:0.0.29
 ```
 
 ## Initialize the SDK
@@ -90,7 +90,7 @@ You have dart Method to launch clickAndCollect:
 ```dart
  // ios and android clickAndCollect
  Herow.launchClickAndCollect();
- Herow.stopClickAndCollect;
+ Herow.stopClickAndCollect();
 
 
  ```
