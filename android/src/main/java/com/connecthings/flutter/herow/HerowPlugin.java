@@ -43,9 +43,11 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
 
     private final Registrar registrar;
     private final HerowInitializer herowInitializer;
+     private final HerowDetectionManager herowDetectionManager;
 
     public HerowPlugin(Registrar registrar) {
         this.herowInitializer = HerowInitializer.getInstance();
+        this.herowDetectionManager HerowDetectionManager.getInstance()
         this.registrar = registrar;
     }
 
@@ -53,7 +55,13 @@ public class HerowPlugin implements MethodCallHandler, EventChannel.StreamHandle
     public void onMethodCall(MethodCall call, Result result) {
         Logger.d(TAG, "method: %s ", call.method);
         switch (call.method) {
-            case "optinsNeverAsked":
+            case "launchClickAndCollect":
+                result.success(herowDetectionManager.launchClickAndCollect());
+                break;
+                 case "stopClickAndCollect":
+                result.success(herowDetectionManager.stopClickAndCollect());
+                break;
+                 case "optinsNeverAsked":
                 result.success(herowInitializer.optinsNeverAsked());
                 break;
             case "updateOptin":

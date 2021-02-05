@@ -1,3 +1,14 @@
+
+## 0.0.28
+
+* fixes bad implementation.
+* add clickAndCollect feature
+
+## 0.0.26
+
+* Update SDK versions.
+* add clickAndCollect feature
+
 ## 0.0.25
 
 * Update SDK versions.

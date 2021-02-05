@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'herow'
-  s.version          = '0.0.25'
+  s.version          = '0.0.28'
   s.summary          = 'A flutter plugin for the HEROW platform - https://my.herow.io'
   s.description      = <<-DESC
 A new flutter plugin project.
@@ -15,6 +15,6 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency  'HerowLocationDetection', '6.3.0-PR4'
+  s.dependency  'HerowLocationDetection', '6.3.0'
   s.ios.deployment_target = '9.0'
 end

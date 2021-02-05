@@ -20,9 +20,11 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
     }
 
     let herowInitializer: HerowInitializer
+    let herowDetectionManager: HerowDetectionManager
 
     public override init() {
         self.herowInitializer = HerowInitializer.shared
+         self.herowDetectionManager = HerowDetectionManager.shared
     }
 
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
@@ -30,6 +32,12 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
         switch call.method {
         case "optinsNeverAsked":
             result(self.herowInitializer.optinsNeverAsked())
+            break
+        case "launchClickAndCollect":
+            result(self.herowDetectionManager.launchClickAndCollect())
+            break
+        case "stopClickAndCollect":
+            result(self.herowDetectionManager.stopClickAndCollect())
             break
         case "setCustomId":
             if (proceedArguments(call: call, result: result, keys: [ "customId"])) {
@@ -40,6 +48,8 @@ public class SwiftHerowPlugin: NSObject, FlutterPlugin {
              }
             }
             break
+
+
         case "getPushID":
            result(self.herowInitializer.userInfoManager.getPushID())
             break

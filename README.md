@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/herowio/flutter
 * add to the dependencies section
 
 ```yaml
-herow:0.0.24
+herow:0.0.27
 ```
 
 ## Initialize the SDK
@@ -33,7 +33,7 @@ Before following the previous tutorial. You need to open the application build.g
 - You need to add the HEROW dependency to your application, to be able to initialize the SDK.
 
 ```
-implementation "com.connecthings.herow:herow-detection:6.2.2"
+implementation "com.connecthings.herow:herow-detection:6.3.0![](data:image/jpeg;base64,IyMgMC4wLjI1CgoqIFVwZGF0ZSBTREsgdmVyc2lvbnMuCiogRml4IHBsdWdpbiBzcGVjcyAKCiMjIDAuMC4yNAoKKiBBZGp1c3Qgc2FtcGxlIHByb2plY3QgZm9yIGlPUy4KCiMjIDAuMC4yMwoKKiBVcGRhdGUgdmVyc2lvbnMgZm9yIGlPUyBhbmQgQW5kcm9pZC4KCiMjIDAuMC4yMgoKKiBTeW5jcmhvbml6ZSBpbW1lZGlhdGx5IGFmdGVyIG9wdGlucyBhcmUgZ2l2ZW4uCgojIyAwLjAuMjEKCiogVXBkYXRlIGRvY3VtZW50YXRpb24uCgojIyAwLjAuMjAKCiogTWlub3IgZml4ZXMgb24gc2FtcGxlIHByb2plY3QuCgojIyAwLjAuMTkKCiogVXBkYXRlIHZlcnNpb24gZm9yIEFuZHJvaWQgJiBpT1MKCiMjIDAuMC4xOAoKKiBNaW5vciBmaXhlcyBvbiBzYW1wbGUgcHJvamVjdC4KCiMjIDAuMC4xNwoKKiBVcGRhdGUgdmVyc2lvbiBmb3IgQW5kcm9pZCAmIGlPUwoKIyMgMC4wLjE2CgoqIFVwZGF0ZSBiZXRhIHZlcnNpb24gZm9yIEFuZHJvaWQgJiBpT1MKCiMjIDAuMC4xNQoKKiBVcGRhdGUgYmV0YSB2ZXJzaW9uIGZvciBBbmRyb2lkICYgaU9TCgojIyAwLjAuMTQKCiogVXBkYXRlIGJldGEgdmVyc2lvbiBmb3IgQW5kcm9pZCAmIGlPUwoKIyMgMC4wLjEzCgoqIFVwZGF0ZSBiZXRhIHZlcnNpb24gZm9yIEFuZHJvaWQgJiBpT1MKCiMjIDAuMC4xMgoKKiBVcGRhdGUgYmV0YSB2ZXJzaW9uCgojIyAwLjAuMTEKCiogRml4IHNldEFwcEdyb3VwTmFtZSBpbXBsZW1lbnRhdGlvbi4KCiMjIDAuMC4xMAoKKiBVcGRhdGUgYmV0YSB2ZXJzaW9uCgojIyAwLjAuOQoKKiBGaXggaU9TIHB1c2ggd2hlbiB0ZXN0aW5nIHdpdGggQVBOUyBzYW5kYm94IG1vZGUuCgojIyAwLjAuOAoKKiBVcGRhdGUgZG9jCgojIyAwLjAuNwoKKiBtaW5vciBmaXhlcyBmb3IgaU9TIHZlcnNpb24KCiMjIDAuMC42CgoqIGFkZCBwdXNoIGFuZCBjdXN0b21JRCBmZWF0dXJlcwoqIFVwZGF0ZSBkb2MKCiMjIDAuMC41CgoqIFVwZGF0ZSBkb2MgCgojIyAwLjAuNAoKKiBNaW5vciBmaXggZm9yIGFjdGlvbnMKCiMjIDAuMC4zCgoqIE1pbm9yIGFkanVzdG1lbnRzCgojIyAwLjAuMgoKKiBCZXRhIG9mIEhlcm93IFNESwoKIyMgMC4wLjEKCiogSW5pdGlhbCB2ZXJzaW9uCg==)"
 ```
 
 >**Warning:**
@@ -85,17 +85,15 @@ Next click on **Embed Frameworks** and remove the **Flutter framework**.
 >
 > `pod install`
 
-## Enable PUSH
-You have dart Method to registerForPush:
+## Launch and stop ClickAndCollect
+You have dart Method to launch clickAndCollect:
 ```dart
- // ios and android push registration
- Herow.registerForRemoteNotifications(true);
+ // ios and android clickAndCollect
+ Herow.launchClickAndCollect();
+ Herow.stopClickAndCollect;
 
- // ios appGroupName settings
- Herow.setAppGroupName("my_APP_Group_Name");
+
  ```
- You can find out more about this by reading our PUSH tutorial for [iOS](https://docs.herow.io/sdk/6.2/ios/push-notification.html) and [Android](https://docs.herow.io/sdk/6.2/android/push-notification.html).
-
 ## Being compliant with GDPR
 
 The following methods allow your application to be compliant to GDPR.
