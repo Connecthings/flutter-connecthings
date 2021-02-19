@@ -18,7 +18,7 @@ You just have to clone the plugin repository [https://github.com/herowio/flutter
 * add to the dependencies section
 
 ```yaml
-herow:0.0.29
+herow:0.0.30
 ```
 
 ## Initialize the SDK

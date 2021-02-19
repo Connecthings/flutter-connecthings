@@ -1,3 +1,7 @@
+## 0.0.30
+
+* fixes android deeplink issue
+
 ## 0.0.29
 
 * fixes documentation
